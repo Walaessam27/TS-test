@@ -24,4 +24,27 @@ numbers[0] = 10;
 
 let user: [string, number];
 user = ["Alice", 30];
+user.push(1);
 
+
+let users: [string, number, boolean, number][];
+users = [["Alice", 30, true, 1]];
+users.push(["Bob", 25, false, 2]);
+
+
+
+const small = 1;
+const medium = 2;
+const large = 3;
+
+//enum Size {small=1, medium=2, large=3}
+
+enum Size {small, medium, large}
+
+let mySize: Size = Size.medium;
+console.log(mySize);
+
+
+enum Sizes {SSmall=1, Mmedium=2, Llarge=3}
+let mySizes: Sizes = Sizes.Mmedium;
+console.log(mySizes);

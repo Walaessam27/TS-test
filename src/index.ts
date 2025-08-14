@@ -132,3 +132,18 @@ let distance: Metric = {
 
 
 console.log(distance);
+
+
+
+
+//nullable types
+function greet(name: string) {
+    if (name) {
+        console.log("Hello, " + name.toUpperCase);
+    } else {
+        console.log("Hello, Guest");
+    }
+}
+
+greet("Alice");
+greet(null);

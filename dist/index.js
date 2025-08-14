@@ -74,5 +74,15 @@ let distance = {
     unit: "km"
 };
 console.log(distance);
+function greet(name) {
+    if (name) {
+        console.log("Hello, " + name.toUpperCase);
+    }
+    else {
+        console.log("Hello, Guest");
+    }
+}
+greet("Alice");
+greet(null);
 export {};
 //# sourceMappingURL=index.js.map

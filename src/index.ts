@@ -85,3 +85,27 @@ function kgToLbs(weight: number | string): number {
 kgToLbs(70);
 kgToLbs("70");
 kgToLbs("70kg");
+
+
+type draggable = {
+    drag: () => void;
+};
+
+type resizable = {
+    resize: () => void;
+};
+
+type UIWidget = draggable & resizable;
+
+
+let textbox: UIWidget = {
+    drag: () => {
+        console.log("Dragging");
+    },
+    resize: () => {
+        console.log("Resizing");
+    }
+};
+
+textbox.drag();
+textbox.resize();   

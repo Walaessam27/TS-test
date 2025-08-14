@@ -1,5 +1,4 @@
 console.log("Hello, World!");
-let firstname = "Alice";
 let age = 20;
 if (age < 100) {
     age += 5;
@@ -8,6 +7,7 @@ console.log(age);
 function render(document) {
     console.log(document);
 }
+render("Hello, World!");
 let numbers;
 numbers = [1, 2, 3, 4, 5];
 numbers[0] = 10;
@@ -17,9 +17,6 @@ user.push(1);
 let users;
 users = [["Alice", 30, true, 1]];
 users.push(["Bob", 25, false, 2]);
-const small = 1;
-const medium = 2;
-const large = 3;
 var Size;
 (function (Size) {
     Size[Size["small"] = 0] = "small";
@@ -36,5 +33,31 @@ var Sizes;
 })(Sizes || (Sizes = {}));
 let mySizes = Sizes.Mmedium;
 console.log(mySizes);
+function calculateTax(income, taxYear) {
+    if (taxYear === 2022) {
+        return income * 0.2;
+    }
+    else {
+        return income * 0.25;
+    }
+}
+calculateTax(50000, 2022);
+let employee = {
+    name: "Alice",
+    id: 30,
+    retire: (date) => {
+        console.log(date);
+    }
+};
+employee.retire(new Date());
+function kgToLbs(weight) {
+    if (typeof weight === "string") {
+        weight = parseFloat(weight);
+    }
+    return weight * 2.20462;
+}
+kgToLbs(70);
+kgToLbs("70");
+kgToLbs("70kg");
 export {};
 //# sourceMappingURL=index.js.map

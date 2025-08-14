@@ -85,8 +85,7 @@ function kgToLbs(weight: number | string): number {
 kgToLbs(70);
 kgToLbs("70");
 kgToLbs("70kg");
-
-
+//intersection type
 type draggable = {
     drag: () => void;
 };
@@ -109,3 +108,27 @@ let textbox: UIWidget = {
 
 textbox.drag();
 textbox.resize();   
+
+//literal types
+type Quantity = 100 | 200 | 300;
+
+// let quantity: Quantity = 100;
+// quantity = 200;
+// quantity = 300;
+
+
+
+
+
+type Metric = {
+    value: Quantity;
+    unit: "cm" | "m" | "km";
+}; 
+
+let distance: Metric = {
+    value: 100,
+    unit: "km"
+};      
+
+
+console.log(distance);

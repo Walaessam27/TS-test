@@ -69,5 +69,10 @@ let textbox = {
 };
 textbox.drag();
 textbox.resize();
+let distance = {
+    value: 100,
+    unit: "km"
+};
+console.log(distance);
 export {};
 //# sourceMappingURL=index.js.map
